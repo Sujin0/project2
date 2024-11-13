@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 10rem;
+    height: 90px;
+}
+
+body{
+    background-image: url(image/Netflix-Background.jpg);
+    background-size: cover;
+    position: relative;
+    height: 700px;
+}
+
+body::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position:absolute;
+    z-index: -1;
+    opacity:0.8;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.signin-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width:70px;
+    height: 32px;
+    font-weight: 500;
+}
+
+/* .btn-secondary{
+    background-color: transparent;
+    width: 100px;
+    line-height: 0.2;
+    height:35px;
+    margin-right: 10px;
+} */
+
+.btn-secondary {
+    background-color: transparent;
+    width: 120px;
+    height: 32px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center; 
+    padding: 10px; 
+}
+
+.translate-icon {
+    width: 20px; 
+    height: auto; 
+    margin-right: 5px;
+}
+
+
+.hero {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+.hero-content {
+    max-width: 590px;
+}
+
+.colour{
+    display: flex;
+    justify-content: end;
+}
+
+.hero-content h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .hero-content h1{
+        font-size: 2rem;
+        font-weight: 700;
+        width:80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    .hero-content h1{
+        font-size: 2.2rem;
+        font-weight: 700;
+        width:80%;
+        margin-left: 10%;
+    }
+}
+
+.para1{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .para1{
+        font-size: 1.1rem;
+        font-weight:400 ;
+        margin-bottom: 1rem;
+    }
+}
+
+.para2{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2px;
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .para2{
+        font-size: 1rem;
+        font-weight:400 ;
+        width:80%;
+        margin-left: 10%;
+    }
+}
+
+.iput{
+    font-size: 1rem;
+    padding: 1rem;
+    background-color:#0f0f0f;
+    border:1px solid rgb(113, 112, 112);
+    border-radius: 5px;
+    width:375px;
+    margin-left: 0%;
+}
+
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .iput{
+        width:45%
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    .iput{
+        width: 55%;
+    }
+}
+
+.cta-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+    width:210px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .cta-button{
+        width:170px;
+        padding: 10px 10px;
+    }
+}
+
+/* .curve{
+    background-color: black;
+    color:white;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+} */
+
+.container1{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .container1{
+        margin-top: -5%;
+    }
+}
+
+.container2{
+    background-color: black;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 5%;
+    
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .container2{
+        flex-wrap: wrap;
+    }
+} 
+
+.dropdown-toggle::after {
+    margin-left: .855em;
+}
+
+.btn3{
+    background-color:rgb(16, 16, 16);
+    color: #fff;
+    width: 105px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    border:1px solid rgb(197, 197, 197);
+    margin-top: 20px;
+}
+
+.dropdown-menu{
+    --bs-dropdown-min-width: 105px;
+}
+
+.btn3:focus{
+    border:2px solid white;
+}
+
+.hero2{
+    margin-left: 8%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+} 
+
+.img1 {
+    margin: 10px;
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.img1:hover{
+    transform:scale(1.05);
+}
+
+ .container3{
+    background-color: black;
+}
+
+.carousel-item.active {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 8%;
+    justify-content:center;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.carousel-item{
+    margin-top:8%;
+    overflow: hidden;
+}
+
+.container4{
+    background-color: black;
+    color: #fff;
+}
+.container5{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    width:90%;
+    margin-left: 5%;
+    
+}
+
+@media screen and (min-width:600px) and (max-width:1300px) {
+    .container5{
+        flex-wrap: wrap;
+    }
+}
+
+.card{
+    color: white;
+    border: 1px solid rgba(17, 17, 68, 0.614);
+    background:linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 15px;
+    padding: 10px;
+    height: 250px;
+    width: 22%;
+}
+
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .card{
+        width:90%;
+        height:200px ;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    .card{
+         width:40%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+.h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-bottom: 3%;    
+}
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    .h2{
+        margin-bottom: 1%;
+    }
+}
+
+.container6{
+    background-color: black;
+}
+
+.faq{
+    color: white;
+    margin-left: 10%;
+    padding-top: 3%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.accordion-button{
+    width: 80%;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 25px;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 1.5rem;
+}
+
+.accordion-button:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow:white;
+}
+
+
+.accordion-body{
+    background-color: rgb(45, 45, 45);
+    width: 80%;
+    margin-left: 5%;
+    color: rgb(255, 255, 255);
+    border-radius: 0rem;
+    padding: 1.5rem;
+    transition: 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+    text-align: left;
+    overflow: hidden;
+    max-height: none;
+    visibility: visible;
+
+}
+
+
+.accordion-item{
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+.accordion-button:not(.collapsed) {
+   color: white;
+   background-color: rgb(53, 51, 51);
+   box-shadow: 2px 2px 0 black;
+
+}
+
+.accordion-button{
+    border-bottom: 10px black;
+}
+
+.accordion{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 5%;
+    width: 95%;
+
+}
+
+.accordion-button::after{
+    background-image: url(image/plus-sign.svg);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(image/cross-button.svg);
+}
+
+
+.accordion-button:focus {
+    box-shadow:none;
+}
+
+.atag{
+    color: white;
+}
+.down{
+    background-color: black;
+    color:white;
+    padding-bottom: 90px;
+}
+
+.para4{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 1px;
+}
+
+.frm{
+    padding: 1rem;
+    background-color:#0f0f0f;
+    color:white;
+    border:1px solid rgb(113, 112, 112);
+    border-radius: 5px;
+    width:570px;
+    margin-left: 25%;
+}
+
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    .frm{
+        width:60%;
+        margin-left: 5%;
+        padding:17px;
+    }
+}
+
+.but2{
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+    width:200px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.container7{
+    display: grid;
+    grid-template-columns:250px 250px 250px 250px ;
+    grid-template-rows:35px 35px 35px 35px ;
+    background-color: black;
+    padding-top:5% ;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+    .container7{
+        display:grid;
+        grid-template-columns:250px 250px ;
+        gap:15px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:991px) {
+    .container7{
+        display:grid;
+        grid-template-columns:300px 300px ;
+        gap:10px;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    .container7{
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        gap:15px;
+    }
+}
+ /* breakpoints 0 - 600px */
+.para5{
+    background-color: black;
+    color: white;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.foot{
+    color:rgb(199, 199, 199);
+    font-size: 15px;
+}
+
+span .dropdown-toggle {
+    width:120px;
+    margin-left: 10%;
+    margin-bottom: 4%;
+}
+
+.lastpara{
+    color:rgb(199, 199, 199);
+    margin-left: 10%;
+    font-size: 15px;
+    bottom: 20%;
+}
+
+
+
+.top {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    height: 6.25rem;
+    z-index: 1;
+  }
+  
+  div {
+    display: block;
+    unicode-bidi: isolate;
+  }
+  
+  @media (min-width: 1280px) {
+    .middle {
+      width: 130%;
+      left: -15%;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .middle {
+      width: 150%;
+      left: -25%;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .middle {
+      width: 180%;
+      left: -40%;
+    }
+  }
+  
+  .middle {
+    width: 200%;
+    left: -50%;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+  }
+  
+  .middle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+  }
+  
+@media screen and (max-width:600px) {
+    .lastpara{
+        margin-left: 5%;
+    }
+
+    .hero-content h1{
+        font-size: 2rem;
+        font-weight: 700;
+        width:80%;
+        margin-left: 10%;
+    }
+
+    .para1{
+        font-size: 1.1rem;
+        font-weight:400 ;
+        margin-bottom: 1rem;
+    }
+
+    .para2{
+        font-size: 1rem;
+        font-weight:400 ;
+        width:80%;
+        margin-left: 10%;
+    }
+
+    .btn3{
+        min-width:300px;
+        padding: 20px;
+    }
+
+    .dropdown-menu{
+        --bs-dropdown-min-width: 400px;
+    }
+    .container2{
+        flex-direction: column;
+        background-color: #000000;
+    }
+    .container2 .dropdown{
+        width: 95%;
+    }
+
+    .iput{
+        width:90%;
+        padding: 10px;
+    }
+
+    .cta-button{
+        width:170px;
+        padding: 10px 10px;
+    }
+
+    .container1{
+        margin-top: -5%;
+    }
+
+    .hero2{
+        margin-left:8%;
+        font-size: 1.2rem;
+    }
+
+    .img1 {
+        width: 110px; 
+    }
+
+    .container5{
+        flex-wrap: wrap;
+    }
+    
+    .card{
+        width:95%;
+        height:200px ;
+    }
+
+    .h2{
+        margin-left:8%;
+        font-size: 1.2rem;
+        padding: 2%;
+    }
+
+    .para5{
+        margin-left: -5%;
+    }
+
+    .frm{
+        width:90%;
+        margin-left: 5%;
+        padding:13px;
+        margin-top: 5%;
+    }
+
+    .logo{
+        width: 6rem;
+        height: 60px;
+    }
+
+    .but2{
+        margin-left: 5%;
+        padding:14px;
+     }
+
+     .container7{
+        display: flex;
+        flex-direction:column;
+        margin-left: 5%;
+        gap:15px;
+    }
+
+    span .dropdown-toggle {
+        width:120px;
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+
+@media  screen and (min-width:600px) and (max-width:991px) {
+    
+    .hero-content h1{
+        font-size: 2rem;
+        font-weight: 700;
+        width:80%;
+        margin-left: 10%;
+    }
+    
+    .para1{
+        font-size: 1.1rem;
+        font-weight:400 ;
+        margin-bottom: 1rem;
+    }
+    
+    .para2{
+        font-size: 1rem;
+        font-weight:400 ;
+        width:80%;
+        margin-left: 10%;
+    }
+    
+    .iput{
+        width:45%
+    }
+
+    .logo{
+        width: 6rem;
+        height: 60px;
+    }
+    .cta-button{
+        width:170px;
+        padding: 10px 10px;
+    }
+
+    .container1{
+        margin-top: -5%;
+    }
+
+    .container2 .dropdown{
+        width: 95%;
+    }
+    .dropdown-toggle{
+        width: 100%;
+    }
+
+     .dropdown-menu{
+        --bs-dropdown-min-width: 400px;
+    }
+
+    .img1 {
+        width: 150px;
+        height: 200px;
+    }
+
+    .container5{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width:90%;
+        height:200px ;
+    }
+    .para5{
+        margin-left: -5%;
+    }
+
+    .h2{
+        margin-left:10%;
+        font-size: 1.3rem;
+        padding: 2%;
+    }
+
+    .frm{
+        width:60%;
+        margin-left: 5%;
+        padding:17px;
+        margin-top: 5%;
+    }
+
+    .container7{
+        margin-left: 5%;
+    }
+    .but2{
+        width:30%;
+        padding:17px;
+    }
+
+    span .dropdown-toggle {
+        width:120px;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+}
+
+
